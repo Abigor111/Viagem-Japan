@@ -26,7 +26,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: "https://Abigor111.io/Viagem-Japan/mapa.html"
+      url: "https://Abigor111.github.io/Viagem-Japan/mapa.html"
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

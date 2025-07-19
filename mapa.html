@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_0410cb966902f8a03cfc0b389d635a82 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_0410cb966902f8a03cfc0b389d635a82" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_0410cb966902f8a03cfc0b389d635a82 = L.map(
+                "map_0410cb966902f8a03cfc0b389d635a82",
+                {
+                    center: [36.2048, 138.2529],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3cfc77ca71363f99266d9378c4f1a2c8 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_3cfc77ca71363f99266d9378c4f1a2c8.addTo(map_0410cb966902f8a03cfc0b389d635a82);
+        
+    
+            var marker_4d9d588cf69363bb459489f05006172a = L.marker(
+                [35.3606, 138.7274],
+                {
+}
+            ).addTo(map_0410cb966902f8a03cfc0b389d635a82);
+        
+    
+            var icon_fa446bbbb0e8b5151f0de302b97fd00c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6055f9fbf10a50a2890d9d4a75cf255a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5bcd383a9d50c0b1e674ad0a344d60b2 = $(`<div id="html_5bcd383a9d50c0b1e674ad0a344d60b2" style="width: 100.0%; height: 100.0%;">Monte Fuji</div>`)[0];
+                popup_6055f9fbf10a50a2890d9d4a75cf255a.setContent(html_5bcd383a9d50c0b1e674ad0a344d60b2);
+            
+        
+
+        marker_4d9d588cf69363bb459489f05006172a.bindPopup(popup_6055f9fbf10a50a2890d9d4a75cf255a)
+        ;
+
+        
+    
+    
+                marker_4d9d588cf69363bb459489f05006172a.setIcon(icon_fa446bbbb0e8b5151f0de302b97fd00c);
+            
+    
+            var marker_d493f82d019b2fd5ec55b1308701d046 = L.marker(
+                [34.9949, 135.785],
+                {
+}
+            ).addTo(map_0410cb966902f8a03cfc0b389d635a82);
+        
+    
+            var icon_86c667b82d25af5865925d86f9685c7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_94e243121579d2bd1c4e216d15328eab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8703e84cb618adfafa4d18a89705f06 = $(`<div id="html_e8703e84cb618adfafa4d18a89705f06" style="width: 100.0%; height: 100.0%;">Templo Kiyomizu-dera</div>`)[0];
+                popup_94e243121579d2bd1c4e216d15328eab.setContent(html_e8703e84cb618adfafa4d18a89705f06);
+            
+        
+
+        marker_d493f82d019b2fd5ec55b1308701d046.bindPopup(popup_94e243121579d2bd1c4e216d15328eab)
+        ;
+
+        
+    
+    
+                marker_d493f82d019b2fd5ec55b1308701d046.setIcon(icon_86c667b82d25af5865925d86f9685c7b);
+            
+    
+            var marker_bb7c1e0c447e0863e55e3d6736bb337b = L.marker(
+                [35.6586, 139.7454],
+                {
+}
+            ).addTo(map_0410cb966902f8a03cfc0b389d635a82);
+        
+    
+            var icon_988e0c766c2f96e326060c9fa4364670 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15e3f6133265bd9c0e6eb40ef255d5b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5b0b8b675e3e1c89c4b1e2f823493223 = $(`<div id="html_5b0b8b675e3e1c89c4b1e2f823493223" style="width: 100.0%; height: 100.0%;">Torre de Tóquio</div>`)[0];
+                popup_15e3f6133265bd9c0e6eb40ef255d5b5.setContent(html_5b0b8b675e3e1c89c4b1e2f823493223);
+            
+        
+
+        marker_bb7c1e0c447e0863e55e3d6736bb337b.bindPopup(popup_15e3f6133265bd9c0e6eb40ef255d5b5)
+        ;
+
+        
+    
+    
+                marker_bb7c1e0c447e0863e55e3d6736bb337b.setIcon(icon_988e0c766c2f96e326060c9fa4364670);
+            
+    
+            var marker_25a2e08239ef2074ab2b1a6d3ef12a6b = L.marker(
+                [34.6873, 135.5259],
+                {
+}
+            ).addTo(map_0410cb966902f8a03cfc0b389d635a82);
+        
+    
+            var icon_a6495677717b842c2450579157b864b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7104091bfa31f8135eeecb33fd087f24 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b1d8fe623bb49bc9604ede26517bd4d4 = $(`<div id="html_b1d8fe623bb49bc9604ede26517bd4d4" style="width: 100.0%; height: 100.0%;">Castelo de Osaka</div>`)[0];
+                popup_7104091bfa31f8135eeecb33fd087f24.setContent(html_b1d8fe623bb49bc9604ede26517bd4d4);
+            
+        
+
+        marker_25a2e08239ef2074ab2b1a6d3ef12a6b.bindPopup(popup_7104091bfa31f8135eeecb33fd087f24)
+        ;
+
+        
+    
+    
+                marker_25a2e08239ef2074ab2b1a6d3ef12a6b.setIcon(icon_a6495677717b842c2450579157b864b5);
+            
+    
+            var marker_f2b2db5e35304c04f6e17d4d419b5df9 = L.marker(
+                [34.9671, 135.7727],
+                {
+}
+            ).addTo(map_0410cb966902f8a03cfc0b389d635a82);
+        
+    
+            var icon_d76c6b94086b38b952b023f9b5ef18a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_785b054c3e6c44eafdce16537e33d5cd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6c001c03b4075022a63f2ec1f2e962eb = $(`<div id="html_6c001c03b4075022a63f2ec1f2e962eb" style="width: 100.0%; height: 100.0%;">Santuário Fushimi Inari</div>`)[0];
+                popup_785b054c3e6c44eafdce16537e33d5cd.setContent(html_6c001c03b4075022a63f2ec1f2e962eb);
+            
+        
+
+        marker_f2b2db5e35304c04f6e17d4d419b5df9.bindPopup(popup_785b054c3e6c44eafdce16537e33d5cd)
+        ;
+
+        
+    
+    
+                marker_f2b2db5e35304c04f6e17d4d419b5df9.setIcon(icon_d76c6b94086b38b952b023f9b5ef18a6);
+            
+    
+            var marker_dd3b4b76bf33d66849f7b0e719a516f1 = L.marker(
+                [34.3955, 132.4536],
+                {
+}
+            ).addTo(map_0410cb966902f8a03cfc0b389d635a82);
+        
+    
+            var icon_564b30c928943834c16492a232f3e7f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26a14b9028024be35d81c886aba5996a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b2a59f80d0a2e113528421bc16282a07 = $(`<div id="html_b2a59f80d0a2e113528421bc16282a07" style="width: 100.0%; height: 100.0%;">Hiroshima Peace Memorial</div>`)[0];
+                popup_26a14b9028024be35d81c886aba5996a.setContent(html_b2a59f80d0a2e113528421bc16282a07);
+            
+        
+
+        marker_dd3b4b76bf33d66849f7b0e719a516f1.bindPopup(popup_26a14b9028024be35d81c886aba5996a)
+        ;
+
+        
+    
+    
+                marker_dd3b4b76bf33d66849f7b0e719a516f1.setIcon(icon_564b30c928943834c16492a232f3e7f6);
+            
+</script>
+</html>

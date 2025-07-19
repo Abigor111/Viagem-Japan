@@ -40,3 +40,8 @@ button {
 button:hover {
     background-color: #333333;
 }
+.leaflet-popup-content-wrapper {
+    width: 350px;
+    height: 100px;
+    overflow: auto;
+}

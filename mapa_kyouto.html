@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="style.css">
     
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
@@ -17,7 +18,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_b415bae0f730defc211d05675ef7419f {
+                #map_e3d848688b252868b6841d8029cb60bb {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +55,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_b415bae0f730defc211d05675ef7419f" ></div>
+            <div class="folium-map" id="map_e3d848688b252868b6841d8029cb60bb" ></div>
         
 </body>
 <script>
     
     
-            var map_b415bae0f730defc211d05675ef7419f = L.map(
-                "map_b415bae0f730defc211d05675ef7419f",
+            var map_e3d848688b252868b6841d8029cb60bb = L.map(
+                "map_e3d848688b252868b6841d8029cb60bb",
                 {
                     center: [35.0116, 135.7681],
                     crs: L.CRS.EPSG3857,
@@ -78,7 +79,7 @@
 
         
     
-            var tile_layer_c6533df49397cc1ea78dd49d398aa7b4 = L.tileLayer(
+            var tile_layer_cb2d1347788e6eec0662666f81f03ab2 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -95,7 +96,691 @@
             );
         
     
-            tile_layer_c6533df49397cc1ea78dd49d398aa7b4.addTo(map_b415bae0f730defc211d05675ef7419f);
+            tile_layer_cb2d1347788e6eec0662666f81f03ab2.addTo(map_e3d848688b252868b6841d8029cb60bb);
         
+    
+            var marker_fbfade4d9ed729ab399fc609bcedf0a2 = L.marker(
+                [35.005280624534755, 135.76498048901183],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_109772bce8f04344e8cbe76f9c360b0d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "shopping-cart",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a4548fdb9ecb98484a67105d53a42c29 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9866af11b2e3c5bb5bd468a5dd0f5f1 = $(`<div id="html_c9866af11b2e3c5bb5bd468a5dd0f5f1" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Mercado Nishiki</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_a4548fdb9ecb98484a67105d53a42c29.setContent(html_c9866af11b2e3c5bb5bd468a5dd0f5f1);
+            
+        
+
+        marker_fbfade4d9ed729ab399fc609bcedf0a2.bindPopup(popup_a4548fdb9ecb98484a67105d53a42c29)
+        ;
+
+        
+    
+    
+                marker_fbfade4d9ed729ab399fc609bcedf0a2.setIcon(icon_109772bce8f04344e8cbe76f9c360b0d);
+            
+    
+            var marker_100e2dd5a7db64cb6259547a7b5ecd49 = L.marker(
+                [35.0037, 135.7788],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_a6521156e24971121fb82d7ad9d5feb0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "theater-masks",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f7beb95d1286b913c8af39855c759ee5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0436479236371f74770f63969b522d24 = $(`<div id="html_0436479236371f74770f63969b522d24" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Gion</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_f7beb95d1286b913c8af39855c759ee5.setContent(html_0436479236371f74770f63969b522d24);
+            
+        
+
+        marker_100e2dd5a7db64cb6259547a7b5ecd49.bindPopup(popup_f7beb95d1286b913c8af39855c759ee5)
+        ;
+
+        
+    
+    
+                marker_100e2dd5a7db64cb6259547a7b5ecd49.setIcon(icon_a6521156e24971121fb82d7ad9d5feb0);
+            
+    
+            var marker_b40e60a39c64823e553f6ce627448c76 = L.marker(
+                [34.96794064879568, 135.7791339527735],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_6f0633c532f8b6f97831e85982829961 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "fire",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4542c77b5325df63b83870ca8d61ab81 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bdf4d45bccb0eadc6c5cfffba19f3a70 = $(`<div id="html_bdf4d45bccb0eadc6c5cfffba19f3a70" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Fushimi Inari</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_4542c77b5325df63b83870ca8d61ab81.setContent(html_bdf4d45bccb0eadc6c5cfffba19f3a70);
+            
+        
+
+        marker_b40e60a39c64823e553f6ce627448c76.bindPopup(popup_4542c77b5325df63b83870ca8d61ab81)
+        ;
+
+        
+    
+    
+                marker_b40e60a39c64823e553f6ce627448c76.setIcon(icon_6f0633c532f8b6f97831e85982829961);
+            
+    
+            var marker_2c1c6a841cc832abe7b9f67928c8a867 = L.marker(
+                [35.03471389342938, 135.7182741257903],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_116cbd75cad9849481d448638360e14d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gopuram",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b8aed9eef5eee7c9471099f8fe574b98 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c7b9eb3253382c95c16e6d0862a9bb9a = $(`<div id="html_c7b9eb3253382c95c16e6d0862a9bb9a" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Templo Ryoan-Ji</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_b8aed9eef5eee7c9471099f8fe574b98.setContent(html_c7b9eb3253382c95c16e6d0862a9bb9a);
+            
+        
+
+        marker_2c1c6a841cc832abe7b9f67928c8a867.bindPopup(popup_b8aed9eef5eee7c9471099f8fe574b98)
+        ;
+
+        
+    
+    
+                marker_2c1c6a841cc832abe7b9f67928c8a867.setIcon(icon_116cbd75cad9849481d448638360e14d);
+            
+    
+            var marker_203bd76fcfb30bc118a05fed9f934cd4 = L.marker(
+                [35.01603118308893, 135.67362592208914],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_7856ebaeef08a5721cf87ad9ddfad038 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gopuram",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f88c37b0bb55a4533c94df5717447fa4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c596a7928a7fe317f5bfd5e8be5deddb = $(`<div id="html_c596a7928a7fe317f5bfd5e8be5deddb" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Templo Tenryu-Ji</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_f88c37b0bb55a4533c94df5717447fa4.setContent(html_c596a7928a7fe317f5bfd5e8be5deddb);
+            
+        
+
+        marker_203bd76fcfb30bc118a05fed9f934cd4.bindPopup(popup_f88c37b0bb55a4533c94df5717447fa4)
+        ;
+
+        
+    
+    
+                marker_203bd76fcfb30bc118a05fed9f934cd4.setIcon(icon_7856ebaeef08a5721cf87ad9ddfad038);
+            
+    
+            var marker_f90a91c12c42ad296ee58621faa23db0 = L.marker(
+                [35.03950173734025, 135.7295756908635],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_a84d3c8939d09d4a8b8bad1c6ad70ee7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gopuram",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c692c4d303ae7778b4c838a9fb4361a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_58601f210737d29ebdad27b7216c2325 = $(`<div id="html_58601f210737d29ebdad27b7216c2325" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Templo Kinkaku-Ji</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_0c692c4d303ae7778b4c838a9fb4361a.setContent(html_58601f210737d29ebdad27b7216c2325);
+            
+        
+
+        marker_f90a91c12c42ad296ee58621faa23db0.bindPopup(popup_0c692c4d303ae7778b4c838a9fb4361a)
+        ;
+
+        
+    
+    
+                marker_f90a91c12c42ad296ee58621faa23db0.setIcon(icon_a84d3c8939d09d4a8b8bad1c6ad70ee7);
+            
+    
+            var marker_c9962534e7c6b5da32e86bba696bd6e9 = L.marker(
+                [34.98810421863275, 135.77208810620448],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_c9e1eb24d887290859e356e9a7aafc02 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "church",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3fd821ee95a738ac1c5cc7e5a95ebc9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_78d1638cba984f65b5aa0a99612655cd = $(`<div id="html_78d1638cba984f65b5aa0a99612655cd" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Sanjusangendo</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_3fd821ee95a738ac1c5cc7e5a95ebc9a.setContent(html_78d1638cba984f65b5aa0a99612655cd);
+            
+        
+
+        marker_c9962534e7c6b5da32e86bba696bd6e9.bindPopup(popup_3fd821ee95a738ac1c5cc7e5a95ebc9a)
+        ;
+
+        
+    
+    
+                marker_c9962534e7c6b5da32e86bba696bd6e9.setIcon(icon_c9e1eb24d887290859e356e9a7aafc02);
+            
+    
+            var marker_19b116fd7ae0412f1f61f88ae263219e = L.marker(
+                [35.02687269714935, 135.65331407941872],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_7e224013991b3c5531ea359a57588375 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "water",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2123e2c50ff339d9dc148508dd16aab = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fb795ebc3f40c4412544a680161b854d = $(`<div id="html_fb795ebc3f40c4412544a680161b854d" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Rio Hozu</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_a2123e2c50ff339d9dc148508dd16aab.setContent(html_fb795ebc3f40c4412544a680161b854d);
+            
+        
+
+        marker_19b116fd7ae0412f1f61f88ae263219e.bindPopup(popup_a2123e2c50ff339d9dc148508dd16aab)
+        ;
+
+        
+    
+    
+                marker_19b116fd7ae0412f1f61f88ae263219e.setIcon(icon_7e224013991b3c5531ea359a57588375);
+            
+    
+            var marker_d76b46420c8e556f57cbe351e4d5a048 = L.marker(
+                [35.010210262021275, 135.6690008034045],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_1f216065ffdb94854c85a67bd1c6bf30 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0d546a024ac18422b80824e1a36e8e72 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_986422272cff52ba4cba4f61609649e0 = $(`<div id="html_986422272cff52ba4cba4f61609649e0" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Arashiyama</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_0d546a024ac18422b80824e1a36e8e72.setContent(html_986422272cff52ba4cba4f61609649e0);
+            
+        
+
+        marker_d76b46420c8e556f57cbe351e4d5a048.bindPopup(popup_0d546a024ac18422b80824e1a36e8e72)
+        ;
+
+        
+    
+    
+                marker_d76b46420c8e556f57cbe351e4d5a048.setIcon(icon_1f216065ffdb94854c85a67bd1c6bf30);
+            
+    
+            var marker_1d6e228250b50b8ff45e85db95f6f038 = L.marker(
+                [35.02714510777314, 135.79819456148633],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_30b08f29a15825f9b579d139c84fb05f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gopuram",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_75f9885501f69729f0fc929dccf78c7e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_055ae49c3b60670df0c99839cfc5bd1e = $(`<div id="html_055ae49c3b60670df0c99839cfc5bd1e" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Templo Ginkaku-Ji</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_75f9885501f69729f0fc929dccf78c7e.setContent(html_055ae49c3b60670df0c99839cfc5bd1e);
+            
+        
+
+        marker_1d6e228250b50b8ff45e85db95f6f038.bindPopup(popup_75f9885501f69729f0fc929dccf78c7e)
+        ;
+
+        
+    
+    
+                marker_1d6e228250b50b8ff45e85db95f6f038.setIcon(icon_30b08f29a15825f9b579d139c84fb05f);
+            
+    
+            var marker_fa0a613a2c4133da322c0aaf0d99bfd0 = L.marker(
+                [34.99483316582546, 135.78543347312763],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_60bf95830c995ab98b0b331a2d4446d4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "water",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8ddad51be037c59f1ed6a14a4c5ebd18 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9dc02570b12fe660c75982ec27dc80eb = $(`<div id="html_9dc02570b12fe660c75982ec27dc80eb" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Templo das Águas Kyomizu-dera</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_8ddad51be037c59f1ed6a14a4c5ebd18.setContent(html_9dc02570b12fe660c75982ec27dc80eb);
+            
+        
+
+        marker_fa0a613a2c4133da322c0aaf0d99bfd0.bindPopup(popup_8ddad51be037c59f1ed6a14a4c5ebd18)
+        ;
+
+        
+    
+    
+                marker_fa0a613a2c4133da322c0aaf0d99bfd0.setIcon(icon_60bf95830c995ab98b0b331a2d4446d4);
+            
+    
+            var marker_c05b369aa52dfa51b319460a49b3d172 = L.marker(
+                [35.016880179859875, 135.6715909755194],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_a4246bd8f2aa02745db7fd49e702bb12 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_297dea9845cfc7275a316d65cd90ce71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fcfc7ee3307b2849c9182fc39b0318a3 = $(`<div id="html_fcfc7ee3307b2849c9182fc39b0318a3" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Floresta de Bambu</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_297dea9845cfc7275a316d65cd90ce71.setContent(html_fcfc7ee3307b2849c9182fc39b0318a3);
+            
+        
+
+        marker_c05b369aa52dfa51b319460a49b3d172.bindPopup(popup_297dea9845cfc7275a316d65cd90ce71)
+        ;
+
+        
+    
+    
+                marker_c05b369aa52dfa51b319460a49b3d172.setIcon(icon_a4246bd8f2aa02745db7fd49e702bb12);
+            
+    
+            var marker_064d8d9a071fe0024e72cba016ec9550 = L.marker(
+                [35.03128333579624, 135.66202666572784],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_be27e5ff518c793ae069e33efc05d682 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gopuram",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da115a3512eb7bbcb8bf5305c4299d82 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0f79c706fd97a107a6f14ad400000d76 = $(`<div id="html_0f79c706fd97a107a6f14ad400000d76" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Templo Otagi Nenbutsu-Ji</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_da115a3512eb7bbcb8bf5305c4299d82.setContent(html_0f79c706fd97a107a6f14ad400000d76);
+            
+        
+
+        marker_064d8d9a071fe0024e72cba016ec9550.bindPopup(popup_da115a3512eb7bbcb8bf5305c4299d82)
+        ;
+
+        
+    
+    
+                marker_064d8d9a071fe0024e72cba016ec9550.setIcon(icon_be27e5ff518c793ae069e33efc05d682);
+            
+    
+            var marker_05f9581f8556db1bd20f23f82f5a234d = L.marker(
+                [34.6851, 135.805],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_8afa24c1e730a73605221eb6aa8db37f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_73bd86f82da1107bb23e4584ee842416 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18e6af5e672420b9471bfab9e74f41f6 = $(`<div id="html_18e6af5e672420b9471bfab9e74f41f6" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Nara</b><br><br><b style='font-size:14px'>Preço:</b> Grátis</div>`)[0];
+                popup_73bd86f82da1107bb23e4584ee842416.setContent(html_18e6af5e672420b9471bfab9e74f41f6);
+            
+        
+
+        marker_05f9581f8556db1bd20f23f82f5a234d.bindPopup(popup_73bd86f82da1107bb23e4584ee842416)
+        ;
+
+        
+    
+    
+                marker_05f9581f8556db1bd20f23f82f5a234d.setIcon(icon_8afa24c1e730a73605221eb6aa8db37f);
+            
+    
+            var marker_312805931eebcc0ff99665767712ca22 = L.marker(
+                [34.6687, 135.5012],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_e1462ee17ee5bd82e35355566174fb9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "city",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_758fbcd11ae520bd7dac408f439e12f6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e7635208ff5dc77779198fabb5f58c37 = $(`<div id="html_e7635208ff5dc77779198fabb5f58c37" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Dotombori District</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_758fbcd11ae520bd7dac408f439e12f6.setContent(html_e7635208ff5dc77779198fabb5f58c37);
+            
+        
+
+        marker_312805931eebcc0ff99665767712ca22.bindPopup(popup_758fbcd11ae520bd7dac408f439e12f6)
+        ;
+
+        
+    
+    
+                marker_312805931eebcc0ff99665767712ca22.setIcon(icon_e1462ee17ee5bd82e35355566174fb9d);
+            
+    
+            var marker_8bdf7e6fbb458b6a8c6ab7818d853275 = L.marker(
+                [35.00426323658411, 135.77128965065418],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_0ac3357da7e2bd6b56b5709889394370 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "road",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab203e75ec9edfa1953d11894eff9d11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bde5d030cef4b0374c9c77ba1b095e67 = $(`<div id="html_bde5d030cef4b0374c9c77ba1b095e67" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Pontocho</b><br><br><b style='font-size:14px'>Preço:</b> </div>`)[0];
+                popup_ab203e75ec9edfa1953d11894eff9d11.setContent(html_bde5d030cef4b0374c9c77ba1b095e67);
+            
+        
+
+        marker_8bdf7e6fbb458b6a8c6ab7818d853275.bindPopup(popup_ab203e75ec9edfa1953d11894eff9d11)
+        ;
+
+        
+    
+    
+                marker_8bdf7e6fbb458b6a8c6ab7818d853275.setIcon(icon_0ac3357da7e2bd6b56b5709889394370);
+            
+    
+            var marker_bed9aa3139c3b10c8d7bc5f5c4f12533 = L.marker(
+                [35.007410003468785, 135.76448997682854],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_b8adc425eacefd9f1d136fd84304e9e5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "user-secret",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8b81fbe1a815f691a7da2ab4a9f3f7e8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e35dd45d7a9e0e892e3093710051ae55 = $(`<div id="html_e35dd45d7a9e0e892e3093710051ae55" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Samurai Ninja Museum</b><br><br><b style='font-size:14px'>Preço:</b> 24€</div>`)[0];
+                popup_8b81fbe1a815f691a7da2ab4a9f3f7e8.setContent(html_e35dd45d7a9e0e892e3093710051ae55);
+            
+        
+
+        marker_bed9aa3139c3b10c8d7bc5f5c4f12533.bindPopup(popup_8b81fbe1a815f691a7da2ab4a9f3f7e8)
+        ;
+
+        
+    
+    
+                marker_bed9aa3139c3b10c8d7bc5f5c4f12533.setIcon(icon_b8adc425eacefd9f1d136fd84304e9e5);
+            
+    
+            var marker_237c55b67c90302af355c71a7a57ec4d = L.marker(
+                [35.01172889031941, 135.67760082100745],
+                {
+}
+            ).addTo(map_e3d848688b252868b6841d8029cb60bb);
+        
+    
+            var icon_d7e6172ac272a3e45dee543c15b136ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9c73950a9beab3e5e582030baca8e9a6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ac7644b17ddf8891385b0c5c4b4d6fdb = $(`<div id="html_ac7644b17ddf8891385b0c5c4b4d6fdb" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Monkey Park</b><br><br><b style='font-size:14px'>Preço:</b> 5€</div>`)[0];
+                popup_9c73950a9beab3e5e582030baca8e9a6.setContent(html_ac7644b17ddf8891385b0c5c4b4d6fdb);
+            
+        
+
+        marker_237c55b67c90302af355c71a7a57ec4d.bindPopup(popup_9c73950a9beab3e5e582030baca8e9a6)
+        ;
+
+        
+    
+    
+                marker_237c55b67c90302af355c71a7a57ec4d.setIcon(icon_d7e6172ac272a3e45dee543c15b136ef);
+            
 </script>
 </html>

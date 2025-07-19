@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="style.css">
     
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
@@ -17,7 +18,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_8b1bba0bbb83fdce87623f1f36285b8e {
+                #map_25613a18cb3217f566d91bdd1a9ff787 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,14 +55,14 @@
 <body>
     
     
-            <div class="folium-map" id="map_8b1bba0bbb83fdce87623f1f36285b8e" ></div>
+            <div class="folium-map" id="map_25613a18cb3217f566d91bdd1a9ff787" ></div>
         
 </body>
 <script>
     
     
-            var map_8b1bba0bbb83fdce87623f1f36285b8e = L.map(
-                "map_8b1bba0bbb83fdce87623f1f36285b8e",
+            var map_25613a18cb3217f566d91bdd1a9ff787 = L.map(
+                "map_25613a18cb3217f566d91bdd1a9ff787",
                 {
                     center: [35.6895, 139.6917],
                     crs: L.CRS.EPSG3857,
@@ -78,7 +79,7 @@
 
         
     
-            var tile_layer_ecead826df1a2008f8f000176f8da09c = L.tileLayer(
+            var tile_layer_4cffcefa559e328ae6fa686243857fca = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -95,83 +96,615 @@
             );
         
     
-            tile_layer_ecead826df1a2008f8f000176f8da09c.addTo(map_8b1bba0bbb83fdce87623f1f36285b8e);
+            tile_layer_4cffcefa559e328ae6fa686243857fca.addTo(map_25613a18cb3217f566d91bdd1a9ff787);
         
     
-            var marker_6e51087563111db615a60a2af46fd42f = L.marker(
-                [35.3606, 138.7274],
+            var marker_e56cdfbbad5104dcb6807adfcf7d53cc = L.marker(
+                [35.65890736822251, 139.7453899825577],
                 {
 }
-            ).addTo(map_8b1bba0bbb83fdce87623f1f36285b8e);
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
         
     
-            var icon_db8f6676a6f7764cd61ce27d0d44bca7 = L.AwesomeMarkers.icon(
-                {
-  "markerColor": "red",
-  "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
-  "extraClasses": "fa-rotate-0",
-}
-            );
-        
-    
-        var popup_e6b6a70de5f00654dc3aa1261ffc964c = L.popup({
-  "maxWidth": "100%",
-});
-
-        
-            
-                var html_e196c71fea077e39c3d66e8fe0ec8454 = $(`<div id="html_e196c71fea077e39c3d66e8fe0ec8454" style="width: 100.0%; height: 100.0%;">Monte Fuji</div>`)[0];
-                popup_e6b6a70de5f00654dc3aa1261ffc964c.setContent(html_e196c71fea077e39c3d66e8fe0ec8454);
-            
-        
-
-        marker_6e51087563111db615a60a2af46fd42f.bindPopup(popup_e6b6a70de5f00654dc3aa1261ffc964c)
-        ;
-
-        
-    
-    
-                marker_6e51087563111db615a60a2af46fd42f.setIcon(icon_db8f6676a6f7764cd61ce27d0d44bca7);
-            
-    
-            var marker_9bda81007c3a5d634e0a116f941e21d9 = L.marker(
-                [35.6586, 139.7454],
-                {
-}
-            ).addTo(map_8b1bba0bbb83fdce87623f1f36285b8e);
-        
-    
-            var icon_dc63c69ceebc6ac312fdd163cf60c5a8 = L.AwesomeMarkers.icon(
+            var icon_d137614a787bab3d470f5fa673bbca9e = L.AwesomeMarkers.icon(
                 {
   "markerColor": "green",
   "iconColor": "white",
-  "icon": "info-sign",
-  "prefix": "glyphicon",
+  "icon": "tower",
+  "prefix": "fa",
   "extraClasses": "fa-rotate-0",
 }
             );
         
     
-        var popup_46893d4218bd73b6ffa650d1aed11f72 = L.popup({
+        var popup_b672934cb7cb1056687e186c5f2277cb = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_f7a1b8f358740f4a95ed5d94e820467d = $(`<div id="html_f7a1b8f358740f4a95ed5d94e820467d" style="width: 100.0%; height: 100.0%;">Tokyo Tower</div>`)[0];
-                popup_46893d4218bd73b6ffa650d1aed11f72.setContent(html_f7a1b8f358740f4a95ed5d94e820467d);
+                var html_2b73ff600f73910955afe6a3e48789b0 = $(`<div id="html_2b73ff600f73910955afe6a3e48789b0" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Tokyo Tower</b><br><br><b style='font-size:14px'>Preço:</b> Tokyo Pass</div>`)[0];
+                popup_b672934cb7cb1056687e186c5f2277cb.setContent(html_2b73ff600f73910955afe6a3e48789b0);
             
         
 
-        marker_9bda81007c3a5d634e0a116f941e21d9.bindPopup(popup_46893d4218bd73b6ffa650d1aed11f72)
+        marker_e56cdfbbad5104dcb6807adfcf7d53cc.bindPopup(popup_b672934cb7cb1056687e186c5f2277cb)
         ;
 
         
     
     
-                marker_9bda81007c3a5d634e0a116f941e21d9.setIcon(icon_dc63c69ceebc6ac312fdd163cf60c5a8);
+                marker_e56cdfbbad5104dcb6807adfcf7d53cc.setIcon(icon_d137614a787bab3d470f5fa673bbca9e);
+            
+    
+            var marker_d3a96d77669e07be5d637c722b48a7e8 = L.marker(
+                [35.64005411937297, 139.86223807091343],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_6c0da41fa0b25fb348704bb052b50dd0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "water",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd4562896681c3889c11243ce3a3f425 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_03a26544330959744184fb3fcafb1261 = $(`<div id="html_03a26544330959744184fb3fcafb1261" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Tokyo Sea Life Park</b><br><br><b style='font-size:14px'>Preço:</b> Tokyo Pass</div>`)[0];
+                popup_fd4562896681c3889c11243ce3a3f425.setContent(html_03a26544330959744184fb3fcafb1261);
+            
+        
+
+        marker_d3a96d77669e07be5d637c722b48a7e8.bindPopup(popup_fd4562896681c3889c11243ce3a3f425)
+        ;
+
+        
+    
+    
+                marker_d3a96d77669e07be5d637c722b48a7e8.setIcon(icon_6c0da41fa0b25fb348704bb052b50dd0);
+            
+    
+            var marker_7ef569d5154ebe67832ddf9b759fa225 = L.marker(
+                [35.71572025959437, 139.51198549845037],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_59c63721d9c861130fefe5d5ca94d822 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "university",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bc8347f01fceeebc0f85eb832e849dfc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d4123544b2f466f8cffde1cbf1e41eee = $(`<div id="html_d4123544b2f466f8cffde1cbf1e41eee" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Edo-Tokyo Open Air Architectural Museum</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_bc8347f01fceeebc0f85eb832e849dfc.setContent(html_d4123544b2f466f8cffde1cbf1e41eee);
+            
+        
+
+        marker_7ef569d5154ebe67832ddf9b759fa225.bindPopup(popup_bc8347f01fceeebc0f85eb832e849dfc)
+        ;
+
+        
+    
+    
+                marker_7ef569d5154ebe67832ddf9b759fa225.setIcon(icon_59c63721d9c861130fefe5d5ca94d822);
+            
+    
+            var marker_e7e8470e5b524ac8f16f6d1f01bfcd9d = L.marker(
+                [35.619575653419105, 139.776378031249],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_f5f2e6209867d8fdde2a71efb12fbc61 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "flask",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aff466c72b65a4d86ee63bad29056348 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4acbf78b9f3c3c00e0407893e4c23ac2 = $(`<div id="html_4acbf78b9f3c3c00e0407893e4c23ac2" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Miraikan – The National Museum of Emerging Science and Innovation</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_aff466c72b65a4d86ee63bad29056348.setContent(html_4acbf78b9f3c3c00e0407893e4c23ac2);
+            
+        
+
+        marker_e7e8470e5b524ac8f16f6d1f01bfcd9d.bindPopup(popup_aff466c72b65a4d86ee63bad29056348)
+        ;
+
+        
+    
+    
+                marker_e7e8470e5b524ac8f16f6d1f01bfcd9d.setIcon(icon_f5f2e6209867d8fdde2a71efb12fbc61);
+            
+    
+            var marker_f6f3716f530228395e6d81dae7e82b92 = L.marker(
+                [35.6497541092538, 139.40326768440679],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_658abb015d1ad1552786723a32a1f8ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "paw",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c41c776f148eb95592a8ff8c120438a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a83de7b8634eec9419dfdae17d3af576 = $(`<div id="html_a83de7b8634eec9419dfdae17d3af576" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Tama Zoological Park</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_3c41c776f148eb95592a8ff8c120438a.setContent(html_a83de7b8634eec9419dfdae17d3af576);
+            
+        
+
+        marker_f6f3716f530228395e6d81dae7e82b92.bindPopup(popup_3c41c776f148eb95592a8ff8c120438a)
+        ;
+
+        
+    
+    
+                marker_f6f3716f530228395e6d81dae7e82b92.setIcon(icon_658abb015d1ad1552786723a32a1f8ed);
+            
+    
+            var marker_928c82e415db1fb45e4021f24dac2487 = L.marker(
+                [35.68105022400575, 139.79732927091393],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_cb0bf6b32724ee112fdb6c09f77c4bdc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ff154484cdb9e9c0a66163e292787b74 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0d1b9808d766580bcf301fd49ddbc603 = $(`<div id="html_0d1b9808d766580bcf301fd49ddbc603" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Kiyosumi Garden</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_ff154484cdb9e9c0a66163e292787b74.setContent(html_0d1b9808d766580bcf301fd49ddbc603);
+            
+        
+
+        marker_928c82e415db1fb45e4021f24dac2487.bindPopup(popup_ff154484cdb9e9c0a66163e292787b74)
+        ;
+
+        
+    
+    
+                marker_928c82e415db1fb45e4021f24dac2487.setIcon(icon_cb0bf6b32724ee112fdb6c09f77c4bdc);
+            
+    
+            var marker_d5b50233bc70fef68cad27e1f402d5fb = L.marker(
+                [35.65129094472841, 139.8294014555711],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_411858f7fb19a6d9ae925d4c5c7a2d38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e370cd8d101becde4a9b23be4d5da71 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_256957f6b9576ac7b9d588eb86d196f6 = $(`<div id="html_256957f6b9576ac7b9d588eb86d196f6" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Greenhouse Dome</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_2e370cd8d101becde4a9b23be4d5da71.setContent(html_256957f6b9576ac7b9d588eb86d196f6);
+            
+        
+
+        marker_d5b50233bc70fef68cad27e1f402d5fb.bindPopup(popup_2e370cd8d101becde4a9b23be4d5da71)
+        ;
+
+        
+    
+    
+                marker_d5b50233bc70fef68cad27e1f402d5fb.setIcon(icon_411858f7fb19a6d9ae925d4c5c7a2d38);
+            
+    
+            var marker_96afeaf342668282f2de101103bfc954 = L.marker(
+                [35.72441480380048, 139.81562205557256],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_b2eb55d3a0054e5845a1cfa97d9ef238 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8fa63090e54f400c3b9ba2b1eac4b0b5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2c140c7be3fc1faef1368fd2bd5ffa6 = $(`<div id="html_e2c140c7be3fc1faef1368fd2bd5ffa6" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Mukojima-Hyakkaen Gardens</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_8fa63090e54f400c3b9ba2b1eac4b0b5.setContent(html_e2c140c7be3fc1faef1368fd2bd5ffa6);
+            
+        
+
+        marker_96afeaf342668282f2de101103bfc954.bindPopup(popup_8fa63090e54f400c3b9ba2b1eac4b0b5)
+        ;
+
+        
+    
+    
+                marker_96afeaf342668282f2de101103bfc954.setIcon(icon_b2eb55d3a0054e5845a1cfa97d9ef238);
+            
+    
+            var marker_9b3165ceda534ec0a7d40963283a0205 = L.marker(
+                [35.71000294230464, 139.76756264022998],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_6d28b091a8e01e83cbc5aac64555ed62 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "leaf",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_40b8eec7390d6a204580594990b183cb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_42136233b7870549d6bbb501b774b544 = $(`<div id="html_42136233b7870549d6bbb501b774b544" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Kyu-Isawaki Gardens</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_40b8eec7390d6a204580594990b183cb.setContent(html_42136233b7870549d6bbb501b774b544);
+            
+        
+
+        marker_9b3165ceda534ec0a7d40963283a0205.bindPopup(popup_40b8eec7390d6a204580594990b183cb)
+        ;
+
+        
+    
+    
+                marker_9b3165ceda534ec0a7d40963283a0205.setIcon(icon_6d28b091a8e01e83cbc5aac64555ed62);
+            
+    
+            var marker_13c4956a6ba9bd44647b0773d8f64e50 = L.marker(
+                [35.702294171531776, 139.77440869967648],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_4dc669c0065972fbf52964d6bfc76664 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gamepad",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c5ee4e7abd08643e6b4fe3ee856b678 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ecbec8ce40f3316406dbe77cfadd2d9 = $(`<div id="html_1ecbec8ce40f3316406dbe77cfadd2d9" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Akihabara</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_1c5ee4e7abd08643e6b4fe3ee856b678.setContent(html_1ecbec8ce40f3316406dbe77cfadd2d9);
+            
+        
+
+        marker_13c4956a6ba9bd44647b0773d8f64e50.bindPopup(popup_1c5ee4e7abd08643e6b4fe3ee856b678)
+        ;
+
+        
+    
+    
+                marker_13c4956a6ba9bd44647b0773d8f64e50.setIcon(icon_4dc669c0065972fbf52964d6bfc76664);
+            
+    
+            var marker_7a7a0973c96caffcad9ae37161029b5f = L.marker(
+                [35.658034, 139.701636],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_1cf50a5e0f6526d5886a7640c2ae061a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "camera",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9a8e0b5adf6bd3af1c39682b4ce105bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2dbe952b5dcca981c28506beed2491cc = $(`<div id="html_2dbe952b5dcca981c28506beed2491cc" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Shibuya</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_9a8e0b5adf6bd3af1c39682b4ce105bb.setContent(html_2dbe952b5dcca981c28506beed2491cc);
+            
+        
+
+        marker_7a7a0973c96caffcad9ae37161029b5f.bindPopup(popup_9a8e0b5adf6bd3af1c39682b4ce105bb)
+        ;
+
+        
+    
+    
+                marker_7a7a0973c96caffcad9ae37161029b5f.setIcon(icon_1cf50a5e0f6526d5886a7640c2ae061a);
+            
+    
+            var marker_25e53dbfa9b5dd6a0d83cb8929873d62 = L.marker(
+                [35.66999941438408, 139.6949614931253],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_08c70a8c0ff07debcb669f18499c5243 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1f6e3297c1b36be60043e5677af93de6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_41a0b62ff0cee03a352fe739bb514613 = $(`<div id="html_41a0b62ff0cee03a352fe739bb514613" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Yoyogi Park</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_1f6e3297c1b36be60043e5677af93de6.setContent(html_41a0b62ff0cee03a352fe739bb514613);
+            
+        
+
+        marker_25e53dbfa9b5dd6a0d83cb8929873d62.bindPopup(popup_1f6e3297c1b36be60043e5677af93de6)
+        ;
+
+        
+    
+    
+                marker_25e53dbfa9b5dd6a0d83cb8929873d62.setIcon(icon_08c70a8c0ff07debcb669f18499c5243);
+            
+    
+            var marker_798874c686c34d7c06ca55318aef05b1 = L.marker(
+                [35.67636218146025, 139.69933665145447],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_a84987e7a038e1882a4f49a754008ede = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_358cadbafbbcdb27e05f9e716816f2f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e791b0fccf83fd472b38f43af8229056 = $(`<div id="html_e791b0fccf83fd472b38f43af8229056" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Meiji Jingu</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_358cadbafbbcdb27e05f9e716816f2f9.setContent(html_e791b0fccf83fd472b38f43af8229056);
+            
+        
+
+        marker_798874c686c34d7c06ca55318aef05b1.bindPopup(popup_358cadbafbbcdb27e05f9e716816f2f9)
+        ;
+
+        
+    
+    
+                marker_798874c686c34d7c06ca55318aef05b1.setIcon(icon_a84987e7a038e1882a4f49a754008ede);
+            
+    
+            var marker_e5a55af3286f030fe84652e8057cbf5c = L.marker(
+                [35.7147973046263, 139.7966266229833],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_c8433c76b737a5dd6eb190ee1f10ca44 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "gopuram",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5a5184b77d8d845792004150c5ad6454 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db77fdaecdbb11e26d9863cea4799a8c = $(`<div id="html_db77fdaecdbb11e26d9863cea4799a8c" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>Templo Senso-JI</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_5a5184b77d8d845792004150c5ad6454.setContent(html_db77fdaecdbb11e26d9863cea4799a8c);
+            
+        
+
+        marker_e5a55af3286f030fe84652e8057cbf5c.bindPopup(popup_5a5184b77d8d845792004150c5ad6454)
+        ;
+
+        
+    
+    
+                marker_e5a55af3286f030fe84652e8057cbf5c.setIcon(icon_c8433c76b737a5dd6eb190ee1f10ca44);
+            
+    
+            var marker_ca080db39c2d6dafe14a0106b43302a7 = L.marker(
+                [35.63797508952107, 139.78836632673526],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_bb379f4a65d82e42a5422960f76b746b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "cube",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b766105ee7bfcd3404208d064edb02be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1c095f18491b214c9da7169de735291a = $(`<div id="html_1c095f18491b214c9da7169de735291a" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>SMALL WORLDS Miniature Museum</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_b766105ee7bfcd3404208d064edb02be.setContent(html_1c095f18491b214c9da7169de735291a);
+            
+        
+
+        marker_ca080db39c2d6dafe14a0106b43302a7.bindPopup(popup_b766105ee7bfcd3404208d064edb02be)
+        ;
+
+        
+    
+    
+                marker_ca080db39c2d6dafe14a0106b43302a7.setIcon(icon_bb379f4a65d82e42a5422960f76b746b);
+            
+    
+            var marker_0211d35dca9107ca62efb29ff76c959d = L.marker(
+                [35.68679980089686, 139.75714449790038],
+                {
+}
+            ).addTo(map_25613a18cb3217f566d91bdd1a9ff787);
+        
+    
+            var icon_42299acbc6579dd3878d5050b6e0b853 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tree",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c28643582be462ec9ff1a66365a47a9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65fcdfe354a858dde21c8dce3710490b = $(`<div id="html_65fcdfe354a858dde21c8dce3710490b" style="width: 100.0%; height: 100.0%;"><b style='font-size:16px'>East Gardens</b><br><br><b style='font-size:14px'>Preço:</b> ...</div>`)[0];
+                popup_4c28643582be462ec9ff1a66365a47a9.setContent(html_65fcdfe354a858dde21c8dce3710490b);
+            
+        
+
+        marker_0211d35dca9107ca62efb29ff76c959d.bindPopup(popup_4c28643582be462ec9ff1a66365a47a9)
+        ;
+
+        
+    
+    
+                marker_0211d35dca9107ca62efb29ff76c959d.setIcon(icon_42299acbc6579dd3878d5050b6e0b853);
             
 </script>
 </html>

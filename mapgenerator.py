@@ -12,6 +12,7 @@ locais = [
     {"nome": "Castelo de Osaka", "coordenadas": [34.6873, 135.5259]},
     {"nome": "Santuário Fushimi Inari", "coordenadas": [34.9671, 135.7727]},
     {"nome": "Hiroshima Peace Memorial", "coordenadas": [34.3955, 132.4536]},
+    {"nome": "Teste", "coordenadas": [34.3955, 132.4536]}
 ]
 
 # Adiciona marcadores com popups

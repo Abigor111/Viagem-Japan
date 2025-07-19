@@ -1,7 +1,7 @@
 import folium
 
 # Coordenadas centrais do Japão
-mapa_japao = folium.Map(location=[36.2048, 138.2529], zoom_start=5,
+mapa_tokyo = folium.Map(location=[36.2048, 138.2529], zoom_start=5,
     tiles="CartoDB positron" )
 
 # Locais famosos
@@ -21,7 +21,7 @@ for local in locais:
         location=local["coordenadas"],
         popup=local["nome"],
         icon=folium.Icon(color="red", icon="info-sign")
-    ).add_to(mapa_japao)
+    ).add_to(mapa_tokyo)
 
 # Guarda o mapa num ficheiro HTML
-mapa_japao.save("mapa.html")
+mapa_tokyo.save("mapa_tokyo.html")

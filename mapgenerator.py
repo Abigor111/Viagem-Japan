@@ -1,10 +1,10 @@
 import folium
 
 mapa_tokyo = folium.Map(location=[35.6895, 139.6917], zoom_start=8,
-    tiles="CartoDB dark_matter" )
+    tiles="CartoDB Voyager" )
 
 locais_tokyo = [
-    {"nome": "Tokyo Tower", "coordenadas": [35.65890736822251, 139.7453899825577], "preco": "Tokyo Pass", "icon": "tower"},
+    {"nome": "Tokyo Tower", "coordenadas": [35.65890736822251, 139.7453899825577], "preco": "Tokyo Pass", "icon": "camera"},
     {"nome": "Tokyo Sea Life Park", "coordenadas": [35.64005411937297, 139.86223807091343], "preco": "Tokyo Pass", "icon": "water"},
     {"nome": "Edo-Tokyo Open Air Architectural Museum", "coordenadas": [35.71572025959437, 139.51198549845037], "preco": "...", "icon": "university"},
     {"nome": "Miraikan – The National Museum of Emerging Science and Innovation", "coordenadas": [35.619575653419105, 139.776378031249], "preco": "...", "icon": "flask"},
@@ -38,10 +38,40 @@ for local in locais_tokyo:
             popup=description,
             icon=folium.Icon(color="red", prefix="fa", icon=local["icon"])
         ).add_to(mapa_tokyo)
+casa_tokyo1 = folium.Marker(
+            location=[35.65735413872696, 139.7559189705854],
+            popup="<b style='font-size:16px'>Hotel Capsula</b>",
+            icon=folium.Icon(color="orange", prefix="fa", icon="house")
+        )
+casa_tokyo2 = folium.Marker(
+            location=[35.54724048278734, 139.75089732430973],
+            popup="<b style='font-size:16px'>Casa</b>",
+            icon=folium.Icon(color="orange", prefix="fa", icon="house")
+        )
+casa_tokyo3 = folium.Marker(
+            location=[35.54373671469915, 139.76593730508648],
+            popup="<b style='font-size:16px'>Hotel Aeroporto</b>",
+            icon=folium.Icon(color="orange", prefix="fa", icon="house")
+        )
+aeroporto_tokyo_1 = folium.Marker(
+            location=[35.54790, 139.78878],
+            popup="<b style='font-size:16px'>Aeroporto Haneda</b>",
+            icon=folium.Icon(color="blue", prefix="fa", icon="plane")
+        )
+aeroporto_tokyo_2 = folium.Marker(
+            location=[35.77655, 140.38275],
+            popup="<b style='font-size:16px'>Aeroporto Narita</b>",
+            icon=folium.Icon(color="blue", prefix="fa", icon="plane")
+        )
+casa_tokyo1.add_to(mapa_tokyo)
+casa_tokyo2.add_to(mapa_tokyo)
+casa_tokyo3.add_to(mapa_tokyo)
+aeroporto_tokyo_1.add_to(mapa_tokyo)
+aeroporto_tokyo_2.add_to(mapa_tokyo)
 mapa_tokyo.save("mapa_tokyo.html")
 # Kyouto
-mapa_kyouto = folium.Map(location=[35.0116, 135.7681], zoom_start=7,
-    tiles="CartoDB dark_matter" )
+mapa_kyouto = folium.Map(location=[35.0116, 135.7681], zoom_start=8,
+    tiles="CartoDB Voyager" )
 
 locais_kyouto = [
     {"nome": "Mercado Nishiki", "coordenadas": [35.005280624534755, 135.76498048901183], "preco": "", "icon": "shopping-cart"},
@@ -79,11 +109,22 @@ for local in locais_kyouto:
             popup=description,
             icon=folium.Icon(color="red", prefix="fa", icon=local["icon"])
         ).add_to(mapa_kyouto)
-
+casa_kyouto = folium.Marker(
+            location=[34.66285769453742, 135.51250832595048],
+            popup="<b style='font-size:16px'>Casa</b>",
+            icon=folium.Icon(color="orange", prefix="fa", icon="house")
+        )
+aeroporto_kyouto = folium.Marker(
+            location=[34.4272990, 135.2440030],
+            popup="<b style='font-size:16px'>Aeroporto</b>",
+            icon=folium.Icon(color="blue", prefix="fa", icon="plane")
+        )
+casa_kyouto.add_to(mapa_kyouto)
+aeroporto_kyouto.add_to(mapa_kyouto)
 mapa_kyouto.save("mapa_kyouto.html")
 # Hokkaido
-mapa_hokkaido = folium.Map(location=[43.2203, 142.8635], zoom_start=7,
-    tiles="CartoDB dark_matter" )
+mapa_hokkaido = folium.Map(location=[43.2203, 142.8635], zoom_start=6,
+    tiles="CartoDB Voyager" )
 
 locais_hokkaido = [
     {"nome": "Otaru Canal", "coordenadas": [43.200021, 141.001558], "preco": "", "icon": "water"},
@@ -119,7 +160,18 @@ for local in locais_hokkaido:
             popup=description,
             icon=folium.Icon(color="red", prefix="fa", icon=local["icon"])
         ).add_to(mapa_hokkaido)
-
+casa_hokkaido = folium.Marker(
+            location=[43.141972, 141.144130],
+            popup="<b style='font-size:16px'>Casa</b>",
+            icon=folium.Icon(color="orange", prefix="fa", icon="house")
+        )
+aeroporto_hokkaido = folium.Marker(
+            location=[42.7752000, 141.6920010],
+            popup="<b style='font-size:16px'>Aeroporto</b>",
+            icon=folium.Icon(color="blue", prefix="fa", icon="plane")
+        )
+casa_hokkaido.add_to(mapa_hokkaido)
+aeroporto_hokkaido.add_to(mapa_hokkaido)
 mapa_hokkaido.save("mapa_hokkaido.html")
 
 # Adicionar o styles.css

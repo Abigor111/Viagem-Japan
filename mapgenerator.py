@@ -6,36 +6,35 @@ mapa_tokyo = folium.Map(location=[35.6895, 139.6917], zoom_start=8,
 locais_tokyo = [
     {"nome": "Tokyo Tower", "coordenadas": [35.65890736822251, 139.7453899825577], "preco": "Tokyo Pass", "icon": "camera"},
     {"nome": "Tokyo Sea Life Park", "coordenadas": [35.64005411937297, 139.86223807091343], "preco": "Tokyo Pass", "icon": "water"},
-    {"nome": "Edo-Tokyo Open Air Architectural Museum", "coordenadas": [35.71572025959437, 139.51198549845037], "preco": "...", "icon": "university"},
-    {"nome": "Miraikan – The National Museum of Emerging Science and Innovation", "coordenadas": [35.619575653419105, 139.776378031249], "preco": "...", "icon": "flask"},
-    {"nome": "Tama Zoological Park", "coordenadas": [35.6497541092538, 139.40326768440679], "preco": "...", "icon": "paw"},
-    {"nome": "Kiyosumi Garden", "coordenadas": [35.68105022400575, 139.79732927091393], "preco": "...", "icon": "leaf"},
-    {"nome": "Greenhouse Dome", "coordenadas": [35.65129094472841, 139.8294014555711], "preco": "...", "icon": "leaf"},
-    {"nome": "Mukojima-Hyakkaen Gardens", "coordenadas": [35.72441480380048, 139.81562205557256], "preco": "...", "icon": "leaf"},
-    {"nome": "Kyu-Isawaki Gardens", "coordenadas": [35.71000294230464, 139.76756264022998], "preco": "...", "icon": "leaf"},
-    {"nome": "Akihabara", "coordenadas": [35.702294171531776, 139.77440869967648], "preco": "...", "icon": "gamepad"},
-    {"nome": "Shibuya", "coordenadas": [35.658034, 139.701636], "preco": "...", "icon": "camera"},
+    {"nome": "Edo-Tokyo Open Air Architectural Museum", "coordenadas": [35.71572025959437, 139.51198549845037], "preco": "Tokyo Pass", "icon": "university"},
+    {"nome": "Miraikan – The National Museum of Emerging Science and Innovation", "coordenadas": [35.619575653419105, 139.776378031249], "preco": "Tokyo Pass", "icon": "flask"},
+    {"nome": "Tama Zoological Park", "coordenadas": [35.6497541092538, 139.40326768440679], "preco": "Tokyo Pass", "icon": "paw"},
+    {"nome": "Kiyosumi Garden", "coordenadas": [35.68105022400575, 139.79732927091393], "preco": "Tokyo Pass", "icon": "leaf"},
+    {"nome": "Greenhouse Dome", "coordenadas": [35.65129094472841, 139.8294014555711], "preco": "Tokyo Pass", "icon": "leaf"},
+    {"nome": "Mukojima-Hyakkaen Gardens", "coordenadas": [35.72441480380048, 139.81562205557256], "preco": "Tokyo Pass", "icon": "leaf"},
+    {"nome": "Kyu-Isawaki Gardens", "coordenadas": [35.71000294230464, 139.76756264022998], "preco": "Tokyo Pass", "icon": "leaf"},
+    {"nome": "Akihabara", "coordenadas": [35.702294171531776, 139.77440869967648], "preco": "Grátis", "icon": "gamepad"},
+    {"nome": "Shibuya", "coordenadas": [35.658034, 139.701636], "preco": "Grátis", "icon": "camera"},
     {"nome": "Yoyogi Park", "coordenadas": [35.66999941438408, 139.6949614931253], "preco": "...", "icon": "tree"},
-    {"nome": "Meiji Jingu", "coordenadas": [35.67636218146025, 139.69933665145447], "preco": "...", "icon": "star"},
+    {"nome": "Meiji Jingu", "coordenadas": [35.67636218146025, 139.69933665145447], "preco": "Tokyo Pass", "icon": "star"},
     {"nome": "Templo Senso-JI", "coordenadas": [35.7147973046263, 139.7966266229833], "preco": "...", "icon": "gopuram"},
-    {"nome": "SMALL WORLDS Miniature Museum", "coordenadas": [35.63797508952107, 139.78836632673526], "preco": "...", "icon": "cube"},
+    {"nome": "SMALL WORLDS Miniature Museum", "coordenadas": [35.63797508952107, 139.78836632673526], "preco": "Tokyo Pass", "icon": "cube"},
     {"nome": "East Gardens", "coordenadas": [35.68679980089686, 139.75714449790038], "preco": "...", "icon": "tree"},
 ]
 
 
 # Adiciona marcadores com popups
 for local in locais_tokyo:
-    description = f"<b style='font-size:16px'>{local['nome']}</b><br><br><b style='font-size:14px'>Preço:</b> {local['preco']}"
     if local["preco"] == "Tokyo Pass" or local["preco"] == "Grátis":
         folium.Marker(
             location=local["coordenadas"],
-            popup=description,
+            popup=f"<b style='font-size:16px'>{local['nome']}</b>",
             icon=folium.Icon(color="green", prefix="fa",icon=local["icon"])
         ).add_to(mapa_tokyo)
     else:
         folium.Marker(
             location=local["coordenadas"],
-            popup=description,
+            popup=f"<b style='font-size:16px'>{local['nome']}</b>",
             icon=folium.Icon(color="red", prefix="fa", icon=local["icon"])
         ).add_to(mapa_tokyo)
 casa_tokyo1 = folium.Marker(
@@ -63,6 +62,14 @@ aeroporto_tokyo_2 = folium.Marker(
             popup="<b style='font-size:16px'>Aeroporto Narita</b>",
             icon=folium.Icon(color="blue", prefix="fa", icon="plane")
         )
+folium.Marker(
+        location=[35.715652514818096, 139.7948452090843],
+        popup="<b style='font-size:16px'>Asakusa Hanayashiki</b>",
+        icon=folium.Icon(color="red", prefix="fa", icon="puzzle-piece")).add_to(mapa_tokyo)
+folium.Marker(
+        location=[35.633543330525676, 139.7770806186259],
+        popup="<b style='font-size:16px'>Tokyo Joypolis</b>",
+        icon=folium.Icon(color="red", prefix="fa", icon="puzzle-piece")).add_to(mapa_tokyo)
 casa_tokyo1.add_to(mapa_tokyo)
 casa_tokyo2.add_to(mapa_tokyo)
 casa_tokyo3.add_to(mapa_tokyo)
@@ -92,12 +99,27 @@ locais_kyouto = [
     {"nome": "Pontocho", "coordenadas": [35.00426323658411, 135.77128965065418], "preco": "", "icon": "road"},
     {"nome": "Samurai Ninja Museum", "coordenadas": [35.007410003468785, 135.76448997682854], "preco": "24€", "icon": "user-secret"},
     {"nome": "Monkey Park", "coordenadas": [35.01172889031941, 135.67760082100745], "preco": "5€", "icon": "paw"},
+    {"nome": "Castelo de Osaka", "coordenadas": [34.687315, 135.52593], "preco": "Osaka Pass", "icon": "university"},
+    {"nome": "Umeda Sky Building", "coordenadas": [34.705499, 135.489211], "preco": "Osaka Pass", "icon": "camera"},
+    {"nome": "Aquário Kaiyukan", "coordenadas": [34.654518, 135.428766], "preco": "Osaka Pass", "icon": "water"},
+    {"nome": "Shitennoji", "coordenadas": [34.652524, 135.516678], "preco": "...", "icon": "gopuram"},
+    {"nome": "Sumiyoshi Taisha", "coordenadas": [34.612189, 135.493631], "preco": "...", "icon": "star"},
+    {"nome": "Parque de Osaka (Osaka Castle Park)", "coordenadas": [34.687446, 135.529848], "preco": "Grátis", "icon": "tree"},
+    {"nome": "Dotonbori", "coordenadas": [34.668735, 135.501274], "preco": "Grátis", "icon": "camera"},
+    {"nome": "Shinsekai", "coordenadas": [34.652498, 135.506256], "preco": "Grátis", "icon": "gamepad"},
+    {"nome": "Parque Tennoji", "coordenadas": [34.650724, 135.512693], "preco": "...", "icon": "tree"},
+    {"nome": "Zoo de Tennoji", "coordenadas": [34.650091, 135.509181], "preco": "Osaka Pass", "icon": "paw"},
+    {"nome": "Jardins Keitakuen", "coordenadas": [34.649148, 135.511493], "preco": "Osaka Pass", "icon": "leaf"},
+    {"nome": "Jardim Botânico de Sakuya Konohana Kan", "coordenadas": [34.705447, 135.575183], "preco": "Osaka Pass", "icon": "leaf"},
+    {"nome": "Museu Nacional de Arte de Osaka", "coordenadas": [34.691683, 135.493827], "preco": "Osaka Pass", "icon": "flask"},
+    {"nome": "Tempozan Ferris Wheel", "coordenadas": [34.654789, 135.428491], "preco": "Osaka Pass", "icon": "star"},
+    {"nome": "Namba Yasaka Shrine", "coordenadas": [34.664129, 135.497539], "preco": "Grátis", "icon": "gopuram"},
 ]
 
 
 for local in locais_kyouto:
-    description = f"<b style='font-size:16px'>{local['nome']}</b><br><br><b style='font-size:14px'>Preço:</b> {local['preco']}"
-    if local["preco"] == "Grátis":
+    description = f"<b style='font-size:16px'>{local['nome']}</b>"
+    if local["preco"] == "Grátis" or local["preco"] == "Osaka Pass":
         folium.Marker(
             location=local["coordenadas"],
             popup=description,
@@ -147,7 +169,7 @@ locais_hokkaido = [
 
 
 for local in locais_hokkaido:
-    description = f"<b style='font-size:16px'>{local['nome']}</b><br><br><b style='font-size:14px'>Preço:</b> {local['preco']}"
+    description = f"<b style='font-size:16px'>{local['nome']}"
     if local["preco"] == "Grátis":
         folium.Marker(
             location=local["coordenadas"],
